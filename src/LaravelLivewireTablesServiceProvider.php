@@ -10,7 +10,7 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 /**
  * Class LaravelLivewireTablesServiceProvider.
  */
-class LaravelLivewireTablesServiceProvider extends PackageServiceProvider
+class LaravelLivewireTablesV1ServiceProvider extends PackageServiceProvider
 {
     public function bootingPackage(): void
     {
@@ -45,7 +45,7 @@ class LaravelLivewireTablesServiceProvider extends PackageServiceProvider
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('laravel-livewire-tables')
+            ->name('laravel-livewire-tables-v')
             ->hasConfigFile()
             ->hasViews()
             ->hasTranslations()
