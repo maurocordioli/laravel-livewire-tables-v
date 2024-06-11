@@ -2,7 +2,7 @@
     @if ($column->isVisible())
         @continue($columnSelect && ! $this->isColumnSelectEnabled($column))
 
-        <x-livewire-tables::bs4.table.cell
+        <x-livewire-tables-v1::bs4.table.cell
             :class="method_exists($this, 'setTableDataClass') ? $this->setTableDataClass($column, $row) : ''"
             :id="method_exists($this, 'setTableDataId') ? $this->setTableDataId($column, $row) : ''"
             :customAttributes="method_exists($this, 'setTableDataAttributes') ? $this->setTableDataAttributes($column, $row) : []"
@@ -12,6 +12,6 @@
             @else
                 {{ $column->formatted($row) }}
             @endif
-        </x-livewire-tables::bs4.table.cell>
+        </x-livewire-tables-v1::bs4.table.cell>
     @endif
 @endforeach

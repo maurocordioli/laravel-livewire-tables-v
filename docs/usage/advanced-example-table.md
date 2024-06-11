@@ -15,9 +15,9 @@ namespace App\Http\Livewire\Admin\User;
 use App\Domains\Auth\Models\User;
 use App\Domains\User\Exports\UserExport;
 use Illuminate\Database\Eloquent\Builder;
-use Rappasoft\LaravelLivewireTables\DataTableComponent;
-use Rappasoft\LaravelLivewireTables\Views\Column;
-use Rappasoft\LaravelLivewireTables\Views\Filter;
+use Rappasoft\LaravelLivewireTablesV1\DataTableComponent;
+use Rappasoft\LaravelLivewireTablesV1\Views\Column;
+use Rappasoft\LaravelLivewireTablesV1\Views\Filter;
 
 class UsersTable extends DataTableComponent
 {
@@ -125,7 +125,7 @@ It's associated custom row:
 **row.blade.php**
 
 ```html
-<x-livewire-tables::table.cell class="hidden md:table-cell">
+<x-livewire-tables-v1::table.cell class="hidden md:table-cell">
     <div>
         @if ($row->isAdmin())
             <x-badges.success>{{ ucfirst($row->type) }}</x-badges.success>
@@ -133,9 +133,9 @@ It's associated custom row:
             <x-badges.default>{{ ucfirst($row->type) }}</x-badges.default>
         @endif
     </div>
-</x-livewire-tables::table.cell>
+</x-livewire-tables-v1::table.cell>
 
-<x-livewire-tables::table.cell>
+<x-livewire-tables-v1::table.cell>
     <div class="flex items-center">
         @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
             <div wire:key="profile-picture-{{ $row->id }}" class="flex-shrink-0 h-10 w-10">
@@ -155,15 +155,15 @@ It's associated custom row:
             @endif
         </div>
     </div>
-</x-livewire-tables::table.cell>
+</x-livewire-tables-v1::table.cell>
 
-<x-livewire-tables::table.cell>
+<x-livewire-tables-v1::table.cell>
     <p class="text-blue-400 truncate">
         <a href="mailto:{{ $row->email }}" class="hover:underline">{{ $row->email }}</a>
     </p>
-</x-livewire-tables::table.cell>
+</x-livewire-tables-v1::table.cell>
 
-<x-livewire-tables::table.cell class="hidden md:table-cell">
+<x-livewire-tables-v1::table.cell class="hidden md:table-cell">
     <div>
         @if ($row->isActive())
             <x-badges.success>@lang('Yes')</x-badges.success>
@@ -171,9 +171,9 @@ It's associated custom row:
             <x-badges.danger>@lang('No')</x-badges.danger>
         @endif
     </div>
-</x-livewire-tables::table.cell>
+</x-livewire-tables-v1::table.cell>
 
-<x-livewire-tables::table.cell class="hidden md:table-cell">
+<x-livewire-tables-v1::table.cell class="hidden md:table-cell">
     <div>
         @if ($row->isVerified())
             <x-badges.success>@lang('Yes')</x-badges.success>
@@ -181,9 +181,9 @@ It's associated custom row:
             <x-badges.danger>@lang('No')</x-badges.danger>
         @endif
     </div>
-</x-livewire-tables::table.cell>
+</x-livewire-tables-v1::table.cell>
 
-<x-livewire-tables::table.cell class="hidden md:table-cell">
+<x-livewire-tables-v1::table.cell class="hidden md:table-cell">
     <div>
         @if ($row->twoFactorEnabled())
             <x-badges.success>@lang('Enabled')</x-badges.success>
@@ -191,9 +191,9 @@ It's associated custom row:
             <x-badges.danger>@lang('Disabled')</x-badges.danger>
         @endif
     </div>
-</x-livewire-tables::table.cell>
+</x-livewire-tables-v1::table.cell>
 
-<x-livewire-tables::table.cell>
+<x-livewire-tables-v1::table.cell>
     <a href="#" wire:click.prevent="manage({{ $row->id }})" class="text-primary-600 font-medium hover:text-primary-900">Manage</a>
-</x-livewire-tables::table.cell>
+</x-livewire-tables-v1::table.cell>
 ```

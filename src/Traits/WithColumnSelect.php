@@ -1,8 +1,8 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Traits;
+namespace Rappasoft\LaravelLivewireTablesV1\Traits;
 
-use Rappasoft\LaravelLivewireTables\Views\Column;
+use Rappasoft\LaravelLivewireTablesV1\Views\Column;
 
 /**
  * Trait WithColumnSelect.

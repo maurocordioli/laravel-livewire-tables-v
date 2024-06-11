@@ -1,14 +1,14 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Traits;
+namespace Rappasoft\LaravelLivewireTablesV1\Traits;
 
 use DateTime;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Facades\Schema;
-use Rappasoft\LaravelLivewireTables\Utilities\ColumnUtilities;
-use Rappasoft\LaravelLivewireTables\Views\Column;
-use Rappasoft\LaravelLivewireTables\Views\Filter;
+use Rappasoft\LaravelLivewireTablesV1\Utilities\ColumnUtilities;
+use Rappasoft\LaravelLivewireTablesV1\Views\Column;
+use Rappasoft\LaravelLivewireTablesV1\Views\Filter;
 
 /**
  * Trait WithFilters.

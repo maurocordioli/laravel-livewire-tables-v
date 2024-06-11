@@ -1,21 +1,21 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables;
+namespace Rappasoft\LaravelLivewireTablesV1;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Livewire\Component;
-use Rappasoft\LaravelLivewireTables\Traits\ComponentHelpers;
-use Rappasoft\LaravelLivewireTables\Traits\WithBulkActions;
-use Rappasoft\LaravelLivewireTables\Traits\WithColumnSelect;
-use Rappasoft\LaravelLivewireTables\Traits\WithCustomPagination;
-use Rappasoft\LaravelLivewireTables\Traits\WithFilters;
-use Rappasoft\LaravelLivewireTables\Traits\WithFooter;
-use Rappasoft\LaravelLivewireTables\Traits\WithHeader;
-use Rappasoft\LaravelLivewireTables\Traits\WithPerPagePagination;
-use Rappasoft\LaravelLivewireTables\Traits\WithReordering;
-use Rappasoft\LaravelLivewireTables\Traits\WithSearch;
-use Rappasoft\LaravelLivewireTables\Traits\WithSorting;
+use Rappasoft\LaravelLivewireTablesV1\Traits\ComponentHelpers;
+use Rappasoft\LaravelLivewireTablesV1\Traits\WithBulkActions;
+use Rappasoft\LaravelLivewireTablesV1\Traits\WithColumnSelect;
+use Rappasoft\LaravelLivewireTablesV1\Traits\WithCustomPagination;
+use Rappasoft\LaravelLivewireTablesV1\Traits\WithFilters;
+use Rappasoft\LaravelLivewireTablesV1\Traits\WithFooter;
+use Rappasoft\LaravelLivewireTablesV1\Traits\WithHeader;
+use Rappasoft\LaravelLivewireTablesV1\Traits\WithPerPagePagination;
+use Rappasoft\LaravelLivewireTablesV1\Traits\WithReordering;
+use Rappasoft\LaravelLivewireTablesV1\Traits\WithSearch;
+use Rappasoft\LaravelLivewireTablesV1\Traits\WithSorting;
 
 /**
  * Class DataTableComponent
@@ -199,7 +199,7 @@ abstract class DataTableComponent extends Component
      */
     public function rowView(): string
     {
-        return 'livewire-tables::'.config('livewire-tables.theme').'.components.table.row-columns';
+        return 'livewire-tables-v1::'.config('livewire-tables.theme').'.components.table.row-columns';
     }
 
     /**
@@ -209,7 +209,7 @@ abstract class DataTableComponent extends Component
      */
     public function modalsView(): string
     {
-        return 'livewire-tables::stubs.modals';
+        return 'livewire-tables-v1::stubs.modals';
     }
 
     /**
@@ -217,7 +217,7 @@ abstract class DataTableComponent extends Component
      */
     public function render()
     {
-        return view('livewire-tables::'.config('livewire-tables.theme').'.datatable')
+        return view('livewire-tables-v1::'.config('livewire-tables.theme').'.datatable')
             ->with([
                 'columns' => $this->columns(),
                 'rowView' => $this->rowView(),

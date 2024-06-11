@@ -1,9 +1,9 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Tests;
+namespace Rappasoft\LaravelLivewireTablesV1\Tests;
 
-use Rappasoft\LaravelLivewireTables\Tests\Models\Pet;
-use Rappasoft\LaravelLivewireTables\Utilities\ColumnUtilities;
+use Rappasoft\LaravelLivewireTablesV1\Tests\Models\Pet;
+use Rappasoft\LaravelLivewireTablesV1\Utilities\ColumnUtilities;
 
 class ColumnUtilitiesTest extends TestCase
 {

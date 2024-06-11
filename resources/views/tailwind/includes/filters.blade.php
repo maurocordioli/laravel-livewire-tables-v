@@ -55,13 +55,13 @@
                             </label>
 
                             @if ($filter->isSelect())
-                                @include('livewire-tables::tailwind.includes.filter-type-select')
+                                @include('livewire-tables-v1::tailwind.includes.filter-type-select')
                             @elseif($filter->isMultiSelect())
-                                @include('livewire-tables::tailwind.includes.filter-type-multiselect')
+                                @include('livewire-tables-v1::tailwind.includes.filter-type-multiselect')
                             @elseif($filter->isDate())
-                                @include('livewire-tables::tailwind.includes.filter-type-date')
+                                @include('livewire-tables-v1::tailwind.includes.filter-type-date')
                             @elseif($filter->isDatetime())
-                                @include('livewire-tables::tailwind.includes.filter-type-datetime')    
+                                @include('livewire-tables-v1::tailwind.includes.filter-type-datetime')    
                             @endif
                         </div>
                     </div>

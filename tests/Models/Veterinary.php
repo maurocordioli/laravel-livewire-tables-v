@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Rappasoft\LaravelLivewireTables\Tests\Models;
+namespace Rappasoft\LaravelLivewireTablesV1\Tests\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;

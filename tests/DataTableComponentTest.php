@@ -1,14 +1,14 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Tests;
+namespace Rappasoft\LaravelLivewireTablesV1\Tests;
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Encryption\Encrypter;
 use Illuminate\Support\Collection;
 use Livewire\Livewire;
-use Rappasoft\LaravelLivewireTables\DataTableComponent;
-use Rappasoft\LaravelLivewireTables\Tests\Http\Livewire\PetsAltQueryTable;
-use Rappasoft\LaravelLivewireTables\Tests\Http\Livewire\PetsTable;
+use Rappasoft\LaravelLivewireTablesV1\DataTableComponent;
+use Rappasoft\LaravelLivewireTablesV1\Tests\Http\Livewire\PetsAltQueryTable;
+use Rappasoft\LaravelLivewireTablesV1\Tests\Http\Livewire\PetsTable;
 
 class DataTableComponentTest extends TestCase
 {

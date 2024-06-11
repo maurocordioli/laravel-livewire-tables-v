@@ -1,6 +1,6 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Views;
+namespace Rappasoft\LaravelLivewireTablesV1\Views;
 
 /**
  * Class Filter.

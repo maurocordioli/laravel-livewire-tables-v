@@ -11,8 +11,8 @@
         count($selected)
     )
 )
-    <x-livewire-tables::bs4.table.row wire:key="row-message">
-        <x-livewire-tables::bs4.table.cell colspan="{{ $colspan }}">
+    <x-livewire-tables-v1::bs4.table.row wire:key="row-message">
+        <x-livewire-tables-v1::bs4.table.cell colspan="{{ $colspan }}">
             @if ((!$paginationEnabled && $selectPage) || (count($selected) && $paginationEnabled && !$selectAll && !$selectPage))
                 <div>
                     <span>
@@ -94,6 +94,6 @@
                     </div>
                 @endif
             @endif
-        </x-livewire-tables::bs4.table.cell>
-    </x-livewire-tables::bs4.table.row>
+        </x-livewire-tables-v1::bs4.table.cell>
+    </x-livewire-tables-v1::bs4.table.row>
 @endif

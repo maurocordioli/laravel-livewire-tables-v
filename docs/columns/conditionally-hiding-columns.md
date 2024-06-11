@@ -18,8 +18,8 @@ Since rowView does not keep track of the column loop, you must also wrap the sam
 
 ```html
 @if (! auth()->user()->isAdmin())
-    <x-livewire-tables::table.cell>
+    <x-livewire-tables-v1::table.cell>
         {{ $row->special_field ?? 'N/A' }}
-    </x-livewire-tables::table.cell>
+    </x-livewire-tables-v1::table.cell>
 @endif
 ```

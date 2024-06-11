@@ -1,15 +1,15 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Tests;
+namespace Rappasoft\LaravelLivewireTablesV1\Tests;
 
 use DB;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Rappasoft\LaravelLivewireTables\LaravelLivewireTablesServiceProvider;
-use Rappasoft\LaravelLivewireTables\Tests\Models\Breed;
-use Rappasoft\LaravelLivewireTables\Tests\Models\Pet;
-use Rappasoft\LaravelLivewireTables\Tests\Models\Species;
-use Rappasoft\LaravelLivewireTables\Tests\Models\Veterinary;
+use Rappasoft\LaravelLivewireTablesV1\LaravelLivewireTablesServiceProvider;
+use Rappasoft\LaravelLivewireTablesV1\Tests\Models\Breed;
+use Rappasoft\LaravelLivewireTablesV1\Tests\Models\Pet;
+use Rappasoft\LaravelLivewireTablesV1\Tests\Models\Species;
+use Rappasoft\LaravelLivewireTablesV1\Tests\Models\Veterinary;
 
 class TestCase extends Orchestra
 {

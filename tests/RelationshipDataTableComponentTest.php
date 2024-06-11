@@ -1,12 +1,12 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Tests;
+namespace Rappasoft\LaravelLivewireTablesV1\Tests;
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
-use Rappasoft\LaravelLivewireTables\DataTableComponent;
-use Rappasoft\LaravelLivewireTables\Tests\Http\Livewire\PetVeterinariesTable;
-use Rappasoft\LaravelLivewireTables\Tests\Models\Pet;
+use Rappasoft\LaravelLivewireTablesV1\DataTableComponent;
+use Rappasoft\LaravelLivewireTablesV1\Tests\Http\Livewire\PetVeterinariesTable;
+use Rappasoft\LaravelLivewireTablesV1\Tests\Models\Pet;
 
 class RelationshipDataTableComponentTest extends TestCase
 {

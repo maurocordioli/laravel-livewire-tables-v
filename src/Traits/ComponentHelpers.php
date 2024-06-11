@@ -1,8 +1,8 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Traits;
+namespace Rappasoft\LaravelLivewireTablesV1\Traits;
 
-use Rappasoft\LaravelLivewireTables\Utilities\ColumnUtilities;
+use Rappasoft\LaravelLivewireTablesV1\Utilities\ColumnUtilities;
 
 /**
  * Trait ComponentHelpers.

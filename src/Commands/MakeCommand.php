@@ -1,6 +1,6 @@
 <?php
 
-namespace Rappasoft\LaravelLivewireTables\Commands;
+namespace Rappasoft\LaravelLivewireTablesV1\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;

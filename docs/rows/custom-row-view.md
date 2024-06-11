@@ -18,15 +18,15 @@ public function rowView(): string
 **Note:** You do not need to wrap in a `<tr>` as you are only specifying your cells in order as they appear in your `columns()` array. This leaves room for the component to add extra columns as needed such in the case of bulk exports.
 
 ```html
-<x-livewire-tables::table.cell> // Note: Tailwind Specific, see below.
+<x-livewire-tables-v1::table.cell> // Note: Tailwind Specific, see below.
     {{ ucfirst($row->type) }}
-</x-livewire-tables::table.cell>
+</x-livewire-tables-v1::table.cell>
 
-<x-livewire-tables::table.cell>
+<x-livewire-tables-v1::table.cell>
     {{ $row->name }}
-</x-livewire-tables::table.cell>
+</x-livewire-tables-v1::table.cell>
 
-<x-livewire-tables::table.cell>
+<x-livewire-tables-v1::table.cell>
     @if ($row->isAdmin())
         @lang('All')
     @elseif (! $row->permissions->count())
@@ -34,22 +34,22 @@ public function rowView(): string
     @else
         {!! collect($row->permissions->pluck('description'))->implode('<br/>') !!}
     @endif
-</x-livewire-tables::table.cell>
+</x-livewire-tables-v1::table.cell>
 
-<x-livewire-tables::table.cell>
+<x-livewire-tables-v1::table.cell>
     @if(! $row->isAdmin())
         <a href="{{ route('admin.auth.role.edit', $row) }}" class="text-primary-600 font-medium hover:text-primary-900">Manage</a>
     @else
         <span>-</span>
     @endif
-</x-livewire-tables::table.cell>
+</x-livewire-tables-v1::table.cell>
 ```
 
 The row view will be passed the current model named as `$row`.
 
 ## Using the included blade components in the row view
 
-To create cells, you should use the `<x-livewire-tables::table.cell>` table cell component, which will be rendered to:
+To create cells, you should use the `<x-livewire-tables-v1::table.cell>` table cell component, which will be rendered to:
 
 ```html
 <td {{ $attributes->merge(['class' => 'px-3 py-2 md:px-6 md:py-4 whitespace-no-wrap text-sm leading-5 text-gray-900']) }}>
@@ -57,9 +57,9 @@ To create cells, you should use the `<x-livewire-tables::table.cell>` table cell
 </td>
 ```
 
-Note: The default `x-livewire-tables::table.row` and `x-livewire-tables::table.cell` default to Tailwind, for Bootstrap specific versions use `x-livewire-tables::bs4.table.row` and `x-livewire-tables::bs4.table.cell` for Bootstrap 4, or `x-livewire-tables::bs5.table.row` and `x-livewire-tables::bs5.table.cell` for Bootstrap 5.
+Note: The default `x-livewire-tables-v1::table.row` and `x-livewire-tables-v1::table.cell` default to Tailwind, for Bootstrap specific versions use `x-livewire-tables-v1::bs4.table.row` and `x-livewire-tables-v1::bs4.table.cell` for Bootstrap 4, or `x-livewire-tables-v1::bs5.table.row` and `x-livewire-tables-v1::bs5.table.cell` for Bootstrap 5.
 
-There is also a Tailwind alias of `x-livewire-tables::tw.table.row` and `x-livewire-tables::tw.table.cell` if you want to be specific.
+There is also a Tailwind alias of `x-livewire-tables-v1::tw.table.row` and `x-livewire-tables-v1::tw.table.cell` if you want to be specific.
 
 The helpers are generally more for Tailwind users, as Bootstrap does not have any default added classes to their rows or cells currently, you can substitute regular `<tr>` and `<td>` if you prefer. Though if any formatting is added in the future, you may have to refactor.
 
