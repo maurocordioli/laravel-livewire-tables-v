@@ -8,7 +8,7 @@
         "tables",
         "laravel"
     ],
-    "homepage": "https://github.com/maurocordioli/laravel-livewire-tables-v",
+    "homepage": "https://github.com/maurocordioli/laravel-livewire-tables-v.git",
     "license": "MIT",
     "authors": [
         {

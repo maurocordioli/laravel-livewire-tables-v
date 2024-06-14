@@ -44,10 +44,12 @@ class LaravelLivewireTablesV1ServiceProvider extends PackageServiceProvider
      */
     public function configurePackage(Package $package): void
     {
+       
+        //$this->loadViewsFrom(__DIR__.'/views', 'livewire-tables-v1');
         $package
-            ->name('laravel-livewire-tables-v')
+            ->name('livewire-tables-v1')
             ->hasConfigFile()
-            ->hasViews()
+            ->hasViews('livewire-tables-v1')
             ->hasTranslations()
             ->hasCommand(MakeCommand::class);
     }

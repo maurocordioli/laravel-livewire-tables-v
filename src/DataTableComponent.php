@@ -135,7 +135,7 @@ abstract class DataTableComponent extends Component
     {
         parent::__construct($id);
 
-        $theme = config('livewire-tables.theme');
+        $theme = config('livewire-tables-v1.theme');
 
         if ($theme === 'bootstrap-4' || $theme === 'bootstrap-5') {
             $this->paginationTheme = 'bootstrap';
@@ -199,7 +199,7 @@ abstract class DataTableComponent extends Component
      */
     public function rowView(): string
     {
-        return 'livewire-tables-v1::'.config('livewire-tables.theme').'.components.table.row-columns';
+        return 'livewire-tables-v1::'.config('livewire-tables-v.theme').'.components.table.row-columns';
     }
 
     /**
@@ -217,7 +217,7 @@ abstract class DataTableComponent extends Component
      */
     public function render()
     {
-        return view('livewire-tables-v1::'.config('livewire-tables.theme').'.datatable')
+        return view('livewire-tables-v1::'.config('livewire-tables-v1.theme').'.datatable')
             ->with([
                 'columns' => $this->columns(),
                 'rowView' => $this->rowView(),
